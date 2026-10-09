@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hongwei Zeng | Radiation Oncology Physics</title>
+<meta name="theme-color" content="#0a1019">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2715%27 fill=%27%230a1019%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%278%27 fill=%27none%27 stroke=%27%23ff8a4c%27 stroke-width=%272%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%273%27 fill=%27%23ff8a4c%27/%3E%3C/svg%3E">
+<link rel="canonical" href="https://zenghongwei.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zenghongwei.com/">
+<meta property="og:image" content="https://zenghongwei.com/images/portrait.jpg">
+<meta property="og:title" content="Hongwei Zeng | Radiation Oncology Physics">
+<meta property="og:description" content="Medical physicist at Shuguang Hospital, Shanghai. Adaptive radiotherapy, lattice radiotherapy and deep-learning tools for treatment accuracy.">
+<meta name="description" content="Hongwei Zeng, medical physicist at Shuguang Hospital, Shanghai. Adaptive radiotherapy, lattice radiotherapy and deep-learning tools for treatment accuracy.">
+<style>
+:root{--bg:#0a1019;--bg2:#111b2a;--ink:#eef2f7;--mut:#9aa8ba;--line:#223046;--hot:#ff8a4c;--cool:#5aa9ff;--g:#4fd1a1;
+--serif:"Iowan Old Style","Charter","Palatino Linotype",Georgia,serif;--sans:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+@media(prefers-color-scheme:light){:root{--bg:#f3f6fa;--bg2:#e8eef6;--ink:#0f1a28;--mut:#506074;--line:#d0dae7;--hot:#d9541e;--cool:#1f6fd1;--g:#1f9a72}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 var(--sans)}
+a{color:inherit}button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--hot);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);font-size:14px}
+nav .wrap{display:flex;gap:26px;align-items:center;height:56px}
+nav b{font:600 17px var(--serif);margin-right:auto}
+nav a{color:var(--mut);text-decoration:none}nav a:hover{color:var(--ink)}
+.lang{display:flex;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.lang button{border:0;background:none;padding:3px 12px;font-size:13px;color:var(--mut);cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.hero{position:relative;overflow:hidden;padding:72px 0 80px;background:radial-gradient(560px circle at var(--mx,70%) var(--my,35%),color-mix(in srgb,var(--hot) 20%,transparent),transparent 62%)}
+.hero .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:56px;align-items:center}
+.tag{font:13px var(--mono);color:var(--hot);margin:0 0 20px}
+h1{font:600 clamp(32px,4.4vw,58px)/1.1 var(--serif);letter-spacing:-.02em;margin:0 0 22px}
+h1 em{font-style:normal;color:var(--hot)}
+.sub{font-size:19px;max-width:30em;color:var(--mut);margin:0 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 22px;border-radius:30px;border:1px solid var(--ink);text-decoration:none;font-size:15px}
+.btn.p{background:var(--ink);color:var(--bg)}
+.nums{display:flex;gap:44px;flex-wrap:wrap;margin-top:44px}
+.nums strong{display:block;font:500 44px/1 var(--mono);color:var(--ink)}
+.nums span{font-size:13px;color:var(--mut);display:block;max-width:12em;margin-top:6px;line-height:1.4}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.halo,.pill,.tile,.track{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+section{padding:84px 0 0}
+h2{font:600 clamp(28px,4vw,42px)/1.15 var(--serif);letter-spacing:-.01em;margin:0 0 30px}
+.themes{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.theme{padding:6px 32px 8px 0}.theme+.theme{padding-left:32px;border-left:1px solid var(--line)}
+.theme i{display:block;width:34px;height:4px;border-radius:2px;margin-bottom:16px}
+.theme h3{font:600 23px/1.25 var(--serif);margin:0 0 10px}
+.theme p{color:var(--mut);margin:0 0 14px;font-size:16px}
+.theme button{background:none;border:0;padding:0;color:var(--ink);cursor:pointer;border-bottom:1px solid var(--hot);font-size:15px}
+.adaptive{background:var(--hot)}.lattice{background:var(--cool)}.data{background:var(--g)}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.chip{border:1px solid var(--line);background:none;border-radius:30px;padding:5px 16px;cursor:pointer;font-size:14px}
+.chip small{color:var(--mut);margin-left:4px}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip[aria-pressed=true] small{color:inherit;opacity:.7}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px;list-style:none;margin:0;padding:0}
+.tile{display:flex;flex-direction:column;gap:9px;padding:20px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;transition:transform .2s,border-color .2s}
+.tile:hover{transform:translateY(-3px);border-color:var(--hot)}
+.tile .m{display:flex;justify-content:space-between;align-items:center;font:12px var(--mono);color:var(--mut)}
+.tile .m b{font-weight:400;color:var(--ink)}
+.tile .r{display:inline-flex;gap:8px;align-items:center}
+.tile .r i{width:8px;height:8px;border-radius:50%}
+.tile h3{font:600 17px/1.4 var(--serif);margin:0}
+.tile h3 a{text-decoration:none}.tile h3 a:hover{text-decoration:underline}
+.tile .j{font-size:14px;font-style:italic;color:var(--mut)}
+.tile .au{font-size:13px;line-height:1.5;color:var(--mut);margin-top:auto}
+.tile .au strong{color:var(--ink)}
+.tile.lead{border-top:3px solid var(--hot)}
+.about{font:400 clamp(20px,2.4vw,26px)/1.6 var(--serif);max-width:34em;margin:0}
+.about strong{font-weight:600;color:var(--hot)}
+.links{display:flex;gap:12px;flex-wrap:wrap}
+.empty{padding:20px;border:1px dashed var(--line);border-radius:10px;color:var(--mut);font-size:15px}
+footer{margin-top:96px;padding:28px 0;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}
+.rot{display:block;min-height:1.1em;transition:opacity .25s,transform .25s}.rot.out{opacity:0;transform:translateY(8px)}
+.avatar{position:relative;width:min(290px,100%);aspect-ratio:4/5;justify-self:center}
+.halo{position:absolute;inset:4% 2%;border-radius:50%;background:linear-gradient(160deg,var(--hot),var(--cool) 55%,var(--g));filter:blur(30px);opacity:.5;animation:breathe 6s ease-in-out infinite}
+.photo{position:absolute;inset:7% 11%;margin:0;border-radius:50%;overflow:hidden;background:var(--bg2);border:4px solid var(--bg);box-shadow:0 0 0 1px var(--line);display:grid;place-items:center}
+.photo svg{width:50%;height:auto;fill:var(--line)}.photo img{width:100%;height:100%;object-fit:cover}
+.pill{position:absolute;display:inline-flex;gap:8px;align-items:center;padding:6px 14px;border-radius:30px;background:var(--bg2);border:1px solid var(--line);font-size:13px;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.12);animation:float 5s ease-in-out infinite}
+.pill:hover{border-color:var(--hot)}.pill i{width:8px;height:8px;border-radius:50%}
+.pill:nth-of-type(1){top:7%;left:-4%}.pill:nth-of-type(2){top:46%;right:-10%;animation-delay:-1.7s}.pill:nth-of-type(3){bottom:5%;left:6%;animation-delay:-3.3s}
+@keyframes float{50%{transform:translateY(-8px)}}@keyframes breathe{50%{transform:scale(1.07);opacity:.62}}
+.marq{overflow:hidden;border-block:1px solid var(--line);padding:13px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;width:max-content;animation:scroll 40s linear infinite;font:13px var(--mono);color:var(--mut);white-space:nowrap}
+.marq:hover .track{animation-play-state:paused}
+.track span{padding-right:46px}.track span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--hot);margin-right:14px;opacity:.8}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+.theme i{transition:width .3s}.theme:hover i{width:64px}
+.tile{animation:pop .45s both;animation-delay:calc(var(--i,0)*35ms)}@keyframes pop{from{opacity:0;transform:translateY(12px)}}
+@media(max-width:800px){.hero{padding:40px 0 56px}.hero .wrap{grid-template-columns:1fr;gap:36px}.avatar{order:-1;justify-self:start;width:210px}
+.themes{grid-template-columns:1fr;gap:34px}.theme,.theme+.theme{padding:0;border:0}nav .wrap{gap:14px}nav a:nth-of-type(n+2):not(:last-of-type){display:none}}
+.roles{list-style:none;margin:40px 0 0;padding:0;max-width:46em}
+.roles li{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.roles li:last-child{border-bottom:1px solid var(--line)}
+.roles em{font:13px/1.9 var(--mono);font-style:normal;color:var(--mut)}
+.roles b{display:block;font-weight:600}.roles span{color:var(--mut);font-size:15px}
+@media(max-width:560px){.roles li{grid-template-columns:1fr;gap:2px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Hongwei Zeng</b><a href="#focus">Focus</a><a href="#papers">Papers</a><a href="#about">About</a><a href="#contact">Contact</a><div class="lang" role="group" aria-label="Language"><button type="button" data-l="en" aria-pressed="true">EN</button><button type="button" data-l="zh" aria-pressed="false">中文</button></div></div></nav>
+
+<header class="hero">
+<div class="wrap">
+  <div>
+    <p class="tag">Radiation oncology physics, Shanghai</p>
+    <h1><span>Making radiotherapy</span><em class="rot">more precise and smarter.</em></h1>
+    <p class="sub">I'm Hongwei Zeng, a medical physicist at Shuguang Hospital, Shanghai. I work on adaptive radiotherapy, lattice radiotherapy and deep-learning tools that keep treatment plans accurate from the first fraction to the last.</p>
+    <div class="btns"><a class="btn p" href="#papers">See my papers</a><a class="btn" href="#contact">Get in touch</a></div>
+    <div class="nums">
+      <div><strong>13</strong><span>SCI and core-journal papers</span></div>
+      <div><strong>4</strong><span>research grants led</span></div>
+      <div><strong>7</strong><span>patent applications, 2 granted</span></div>
+    </div>
+  </div>
+  <div class="avatar">
+    <div class="halo"></div>
+    <figure class="photo" id="photo"><svg viewBox="0 0 80 100" aria-hidden="true"><circle cx="40" cy="36" r="16"/><path d="M8 100c0-22 14-34 32-34s32 12 32 34z"/></svg></figure>
+    <button type="button" class="pill" data-go="adaptive"><i class="adaptive"></i>Adaptive RT</button>
+    <button type="button" class="pill" data-go="lattice"><i class="lattice"></i>Lattice RT</button>
+    <button type="button" class="pill" data-go="data"><i class="data"></i>Data studies</button>
+  </div>
+</div>
+</header>
+<div class="marq" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<main class="wrap">
+<section id="focus">
+  <h2>What I work on</h2>
+  <div class="themes">
+    <div class="theme"><i class="adaptive"></i><h3>Adaptive radiotherapy</h3><p>Using daily CBCT and deep learning to see what the anatomy did today, then re-plan around it.</p><button type="button" data-go="adaptive">See related papers</button></div>
+    <div class="theme"><i class="lattice"></i><h3>Lattice radiotherapy</h3><p>Making spatially fractionated boosts deliver as planned, from gamma passing rates to dose monitoring.</p><button type="button" data-go="lattice">See related papers</button></div>
+    <div class="theme"><i class="data"></i><h3>Clinical and data studies</h3><p>Bibliometrics, network pharmacology and retrospective studies with clinical and pharmacology collaborators.</p><button type="button" data-go="data">See related papers</button></div>
+  </div>
+</section>
+
+<section id="papers">
+  <h2>Papers</h2>
+  <div class="chips" id="chips"></div>
+  <ul class="grid" id="publist"></ul>
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <p class="about" data-zh="我在上海中医药大学附属曙光医院放疗科担任<strong>物理技术组长</strong>。我在复旦大学获得医学物理硕士学位，现任上海市医学会肿瘤放射治疗专科分会物理学组委员、医学图像青年研讨会委员。一路走来，主持上海市级等课题 4 项，申请专利 7 项，其中 2 项已授权。">I lead the <strong>physics technology group</strong> in the Department of Radiation Oncology at Shuguang Hospital, Shanghai University of Traditional Chinese Medicine. I trained in medical physics at Fudan University (M.S.), and I sit on the Physics Group of the Branch Association of Radiation Oncology of Shanghai Medical Association and on the committee of the Medical Imaging Computing Seminar (MICS). Along the way I have led four Shanghai municipal and other grants and filed seven patent applications, two of them granted.</p>
+  <ul class="roles">
+    <li><em>Position</em><div><b>Head, Physics Technology Group</b><span>Department of Radiation Oncology, Shuguang Hospital Affiliated to Shanghai University of Traditional Chinese Medicine</span></div></li>
+    <li><em>Education</em><div><b>M.S. in Medical Physics</b><span>Fudan University</span></div></li>
+    <li><em>Societies</em><div><b>Committee Member, Physics Group</b><span>Branch Association of Radiation Oncology of Shanghai Medical Association</span></div></li>
+    <li><em>Societies</em><div><b>Committee Member</b><span>Medical Imaging Computing Seminar (MICS)</span></div></li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Get in touch</h2>
+  <div id="contactbox"></div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 Hongwei Zeng</div></footer>
+
+<script>
+/* Fill in your details here; the page renders them automatically. */
+const CONFIG = { email: "yewon1103@163.com", scholar: "", orcid: "", github: "", photo: "images/portrait.jpg" };
+const PUBS = [
+  { year: 2024, title: "Network Pharmacology Analysis on the Mechanism of Xihuangwan in Treating Rectal Cancer and Radiation Enteritis", journal: "Current Pharmaceutical Design, 2024;30(9):683-701", authors: "Lv M, Ding R, Ma P, Feng Y, Zeng S, Zhang Y, Shen W, Guan W, Xiangyu E, Zeng H, Yu J", role: "Co-author", link: "https://doi.org/10.2174/0113816128287232240213105913" },
+  { year: 2026, title: "Accumulated dose on daily iCBCT for rectal cancer: Effects of inter-fraction bowel cavity motion volume", journal: "Journal of Applied Clinical Medical Physics, 2026;27(3):e70524", authors: "Zeng H, E X, Zeng S, Feng Y, Yu J, Lv M, Zhao R", role: "First author", link: "https://doi.org/10.1002/acm2.70524" },
+  { year: 2025, title: "Integrating aperture shape controller and machine learning prediction to improve gamma passing rates in lattice radiotherapy", journal: "Physics in Medicine and Biology, 2025;71(1)", authors: "E X, Zeng S, Lv M, Feng Y, Yu J, Zhao R, Zeng H", role: "Last author", link: "https://doi.org/10.1088/1361-6560/ae2bba" },
+  { year: 2025, title: "Cutting-edge dynamics and research hotspots on boswellic acid in cancer: a bibliometrics analysis from 1994 to 2024", journal: "Discover Oncology, 2025;16(1):1173", authors: "Lv M, Tang L, Feng Y, Zeng S, Zeng H, Yu J, Ji Q, Zhao R", role: "Co-author", link: "https://doi.org/10.1007/s12672-025-02953-x" },
+  { year: 2025, title: "Effects of Coronin 2A on prognosis and immune microenvironment in tumor patients: a knowledge map of the novel biomarker via bioinformatics analysis", journal: "Discover Oncology, 2025;16(1):816", authors: "Lv M, Yu J, Zeng H, Zhao R", role: "Co-author", link: "https://doi.org/10.1007/s12672-025-02694-x" },
+  { year: 2025, title: "Assessment of clinical feasibility: offline adaptive radiotherapy for lung cancer utilizing kV iCBCT and UNet++ based deep learning model", journal: "Journal of Applied Clinical Medical Physics, 2025;26(2):e14582", authors: "Zeng H, Chen Q, E X, Feng Y, Lv M, Zeng S, Shen W, Guan W, Zhang Y, Zhao R, Wang S, Yu J", role: "First author", link: "https://doi.org/10.1002/acm2.14582" },
+  { year: 2025, title: "Deep learning-based synthetic CT for dosimetric monitoring of combined conventional radiotherapy and lattice boost in large lung tumors", journal: "Radiation Oncology, 2025;20(1):12", authors: "Zeng H, E X, Lv M, Zeng S, Feng Y, Shen W, Guan W, Zhang Y, Zhao R, Yu J", role: "First author", link: "https://doi.org/10.1186/s13014-024-02568-6" },
+  { year: 2025, title: "Hotspots and frontiers of autophagy and chemotherapy in lung cancer: a bibliometric and visualization analysis from 2003 to 2023", journal: "Naunyn-Schmiedeberg's Archives of Pharmacology, 2025;398(2):1583-1595", authors: "Lv M, Feng Y, Zeng S, Zhang Y, Shen W, Guan W, E X, Zeng H, Zhao R, Yu J", role: "Co-author", link: "https://doi.org/10.1007/s00210-024-03354-7" },
+  { year: 2024, title: "Network pharmacology in combination with bibliometrics analysis on the mechanism of compound Kushen injection in the treatment of radiation pneumonia and lung cancer", journal: "Naunyn-Schmiedeberg's Archives of Pharmacology, 2024;397(12):9789-9809", authors: "Lv M, Feng Y, Zeng S, Zhang Y, Shen W, Guan W, E X, Zeng H, Zhao R, Yu J", role: "Co-author", link: "https://doi.org/10.1007/s00210-024-03238-w" },
+  { year: 2024, title: "A bibliometrics analysis based on the application of artificial intelligence in the field of radiotherapy from 2003 to 2023", journal: "Radiation Oncology, 2024;19(1):157", authors: "Lv M, Feng Y, Zeng S, Zhang Y, Shen W, Guan W, E X, Zeng H, Zhao R, Yu J", role: "Co-author", link: "https://doi.org/10.1186/s13014-024-02551-1" },
+  { year: 2024, title: "Efficacy and Safety Analysis of Recombinant Human Endostatin (Endostar) Combined With Chemoradiotherapy for Locally Advanced Cervical Cancer: A 2-Center Retrospective Study", journal: "Technology in Cancer Research & Treatment, 2024;23:15330338241263026", authors: "Feng Y, Li X, Sun F, Zhou J, Wang L, Zeng H, Yu J", role: "Co-author", link: "https://doi.org/10.1177/15330338241263026" },
+  { year: 2024, title: "Knowledge domains and emerging trends in radiotherapy in oesophageal cancer from 2004 to 2023: a bibliometric analysis and visualization study", journal: "Journal of Radiation Research, 2024;65(4):433-449", authors: "Feng Y, Lv M, Zeng S, Zeng H, Yu J", role: "Co-author", link: "https://doi.org/10.1093/jrr/rrae040" },
+];
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+if (CONFIG.photo) { const img = new Image(); img.alt = "Portrait of Hongwei Zeng"; img.onload = () => document.getElementById("photo").replaceChildren(img); img.src = CONFIG.photo; }
+
+/* Papers are grouped into themes by keywords in the title. */
+const THEMES = { adaptive: /adaptive|CBCT|synthetic CT|accumulated dose/i, lattice: /lattice/i, data: /bibliometric|pharmacology|bioinformatics|retrospective/i };
+const NAMES = { adaptive: "Adaptive radiotherapy", lattice: "Lattice radiotherapy", data: "Clinical and data studies" };
+const COLORS = { adaptive: "var(--hot)", lattice: "var(--cool)", data: "var(--g)" };
+let filter = "all", lang = "en";
+
+function renderPubs() {
+  const all = [...PUBS].sort((a, b) => b.year - a.year).map(p => ({ ...p, tags: Object.keys(THEMES).filter(k => THEMES[k].test(p.title)) }));
+  const shown = all.filter(p => filter === "all" || p.tags.includes(filter));
+  document.getElementById("chips").innerHTML = [["all", "All", all.length], ...Object.keys(NAMES).map(k => [k, NAMES[k], all.filter(p => p.tags.includes(k)).length])]
+    .map(([k, n, c]) => `<button type="button" class="chip" data-k="${k}" aria-pressed="${k === filter}"><span>${n}</span><small>${c}</small></button>`).join("");
+  document.getElementById("publist").innerHTML = shown.map((p, i) => `
+    <li class="tile${/First|Last/.test(p.role || "") ? " lead" : ""}" style="--i:${i}">
+      <div class="m"><b>${esc(p.year)}</b><span class="r">${p.tags.map(t => `<i style="background:${COLORS[t]}"></i>`).join("")}<span>${esc(p.role)}</span></span></div>
+      <h3>${p.link ? `<a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.title)}</a>` : esc(p.title)}</h3>
+      <div class="j">${esc(p.journal)}</div>
+      <div class="au">${esc(p.authors).replace(/\bZeng H\b/g, "<strong>Zeng H</strong>")}</div>
+    </li>`).join("");
+  applyLang(lang);
+}
+document.getElementById("chips").addEventListener("click", e => { const b = e.target.closest(".chip"); if (b) { filter = b.dataset.k; renderPubs(); } });
+document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => { filter = b.dataset.go; renderPubs(); document.getElementById("papers").scrollIntoView(); }));
+
+const items = [
+  CONFIG.email && `<a class="btn p" href="mailto:${esc(CONFIG.email)}">${esc(CONFIG.email)}</a>`,
+  CONFIG.scholar && `<a class="btn" href="${esc(CONFIG.scholar)}" target="_blank" rel="noopener">Google Scholar</a>`,
+  CONFIG.orcid && `<a class="btn" href="${esc(CONFIG.orcid)}" target="_blank" rel="noopener">ORCID</a>`,
+  CONFIG.github && `<a class="btn" href="${esc(CONFIG.github)}" target="_blank" rel="noopener">GitHub</a>`
+].filter(Boolean);
+document.getElementById("contactbox").innerHTML = items.length ? `<div class="links">${items.join("")}</div>` : '<div class="empty">Contact details to be added. Fill in CONFIG at the bottom of this file to show email and academic profile links.</div>';
+
+/* Language switch: ZH maps exact English strings to Chinese; data-zh holds whole-element translations. */
+const ZH = {
+  "Hongwei Zeng": "曾宏伟", "Focus": "方向", "Papers": "论文", "About": "关于", "Contact": "联系",
+  "Radiation oncology physics, Shanghai": "肿瘤放射治疗物理，上海",
+  "I'm Hongwei Zeng, a medical physicist at Shuguang Hospital, Shanghai. I work on adaptive radiotherapy, lattice radiotherapy and deep-learning tools that keep treatment plans accurate from the first fraction to the last.": "我是曾宏伟，上海中医药大学附属曙光医院的医学物理师。我研究自适应放疗、点阵放疗，以及用深度学习让治疗计划从第一次到最后一次都保持精准的工具。",
+  "See my papers": "查看论文", "Get in touch": "联系我",
+  "SCI and core-journal papers": "SCI 及核心期刊论文", "research grants led": "主持科研课题", "patent applications, 2 granted": "专利申请，2 项已授权",
+  "What I work on": "研究方向", "About me": "关于我",
+  "Adaptive radiotherapy": "自适应放疗", "Using daily CBCT and deep learning to see what the anatomy did today, then re-plan around it.": "利用每日 CBCT 和深度学习，看清当天的解剖变化，并据此调整治疗计划。",
+  "Lattice radiotherapy": "点阵放疗", "Making spatially fractionated boosts deliver as planned, from gamma passing rates to dose monitoring.": "让空间分割式加量放疗按计划实施，从伽马通过率到剂量监测。",
+  "Clinical and data studies": "临床与数据研究", "Bibliometrics, network pharmacology and retrospective studies with clinical and pharmacology collaborators.": "与临床和药理合作者开展文献计量、网络药理学和回顾性研究。",
+  "See related papers": "查看相关论文", "All": "全部",
+  "First author": "第一作者", "Last author": "末位作者", "Co-author": "合作作者", "Corresponding author": "通讯作者",
+  "Contact details to be added. Fill in CONFIG at the bottom of this file to show email and academic profile links.": "联系方式待补充。在文件底部的 CONFIG 中填写后会显示在这里。",
+  "© 2026 Hongwei Zeng": "© 2026 曾宏伟", "Making radiotherapy": "让放疗", "Position": "现任", "Education": "教育", "Societies": "学术任职", "Head, Physics Technology Group": "放疗科物理技术组长", "Department of Radiation Oncology, Shuguang Hospital Affiliated to Shanghai University of Traditional Chinese Medicine": "上海中医药大学附属曙光医院放疗科", "M.S. in Medical Physics": "医学物理硕士", "Fudan University": "复旦大学", "Committee Member, Physics Group": "物理学组委员", "Branch Association of Radiation Oncology of Shanghai Medical Association": "上海市医学会肿瘤放射治疗专科分会", "Committee Member": "委员", "Medical Imaging Computing Seminar (MICS)": "医学图像青年研讨会（MICS）", "more precise and smarter.": "更精准、更智能", "Adaptive RT": "自适应放疗", "Lattice RT": "点阵放疗", "Data studies": "数据研究"
+};
+const orig = new WeakMap();
+function applyLang(l) {
+  lang = l;
+  document.documentElement.lang = l === "zh" ? "zh-CN" : "en";
+  document.body.style.fontFamily = l === "zh" ? '"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif' : "";
+  document.querySelectorAll("[data-zh]").forEach(el => { if (!el.dataset.en) el.dataset.en = el.innerHTML; el.innerHTML = l === "zh" ? el.dataset.zh : el.dataset.en; });
+  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, { acceptNode: n => n.parentElement.closest("script,style") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+  let n;
+  while ((n = w.nextNode())) {
+    if (!orig.has(n)) orig.set(n, n.nodeValue);
+    const o = orig.get(n), key = o.trim().replace(/\s+/g, " ");
+    n.nodeValue = (l === "zh" && ZH[key]) ? o.replace(o.trim(), ZH[key]) : o;
+  }
+  document.title = l === "zh" ? "曾宏伟｜肿瘤放射治疗物理" : "Hongwei Zeng | Radiation Oncology Physics";
+  document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.l === l)));
+  try { localStorage.setItem("lang", l); } catch (e) {}
+}
+document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => applyLang(b.dataset.l)));
+try { lang = localStorage.getItem("lang") || "en"; } catch (e) {}
+renderPubs();
+
+/* Journal ticker, built from the papers list */
+const jr = [...new Set(PUBS.map(p => p.journal.split(",")[0]))].map(j => `<span>${esc(j)}</span>`).join("");
+document.getElementById("track").innerHTML = jr + jr;
+
+/* Fade-up on scroll */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll("section h2,.theme,.about,.chips,#contactbox").forEach(el => { el.classList.add("rv"); io.observe(el); });
+
+/* A soft "beam" glow follows the pointer in the hero. */
+const hero = document.querySelector(".hero");
+if (!matchMedia("(prefers-reduced-motion:reduce)").matches) hero.addEventListener("pointermove", e => {
+  const r = hero.getBoundingClientRect();
+  hero.style.setProperty("--mx", (e.clientX - r.left) + "px"); hero.style.setProperty("--my", (e.clientY - r.top) + "px");
+});
+</script>
+</body>
+</html>
