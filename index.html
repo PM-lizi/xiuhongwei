@@ -38,9 +38,9 @@ h1 em{font-style:normal;color:var(--hot)}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn{padding:11px 22px;border-radius:30px;border:1px solid var(--ink);text-decoration:none;font-size:15px}
 .btn.p{background:var(--ink);color:var(--bg)}
-.nums{display:flex;gap:44px;flex-wrap:wrap;margin-top:44px}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:28px 32px;margin-top:44px;max-width:640px}
 .nums strong{display:block;font:500 44px/1 var(--mono);color:var(--ink)}
-.nums span{font-size:13px;color:var(--mut);display:block;max-width:12em;margin-top:6px;line-height:1.4}
+.nums span{font-size:13px;color:var(--mut);display:block;margin-top:6px;line-height:1.4}
 @keyframes draw{to{stroke-dashoffset:0}}
 @media(prefers-reduced-motion:reduce){.halo,.pill,.tile,.track{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 section{padding:84px 0 0}
@@ -110,12 +110,12 @@ footer{margin-top:96px;padding:28px 0;border-top:1px solid var(--line);font-size
   <div>
     <p class="tag">Radiation oncology physics, Shanghai</p>
     <h1><span>Making radiotherapy</span><em class="rot">more precise and smarter.</em></h1>
-    <p class="sub">I'm Hongwei Zeng, a medical physicist at Shuguang Hospital, Shanghai. I work on adaptive radiotherapy, lattice radiotherapy and deep-learning tools that keep treatment plans accurate from the first fraction to the last.</p>
+    <p class="sub">I’m Hongwei Zeng, a medical physicist at Shuguang Hospital, Shanghai. My research interests include adaptive radiotherapy, Lattice radiotherapy, and deep learning-based methods and tools for improving interfraction treatment plan consistency and accuracy.</p>
     <div class="btns"><a class="btn p" href="#papers">See my papers</a><a class="btn" href="#contact">Get in touch</a></div>
     <div class="nums">
-      <div><strong>13</strong><span>SCI and core-journal papers</span></div>
-      <div><strong>4</strong><span>research grants led</span></div>
-      <div><strong>7</strong><span>patent applications, 2 granted</span></div>
+      <div><strong>15</strong><span>SCI and core-journal papers as first or corresponding author</span></div>
+      <div><strong>4</strong><span>clinical research and innovation grants led, including Shanghai Municipal Health Commission</span></div>
+      <div><strong>8</strong><span>national invention and utility-model patents, applied and granted</span></div>
     </div>
   </div>
   <div class="avatar">
@@ -147,9 +147,9 @@ footer{margin-top:96px;padding:28px 0;border-top:1px solid var(--line);font-size
 
 <section id="about">
   <h2>About me</h2>
-  <p class="about" data-zh="我在上海中医药大学附属曙光医院放疗科担任<strong>物理技术组长</strong>。我在复旦大学获得医学物理硕士学位，现任上海市医学会肿瘤放射治疗专科分会物理学组委员、医学图像青年研讨会委员。一路走来，主持上海市级等课题 4 项，申请专利 7 项，其中 2 项已授权。">I lead the <strong>physics technology group</strong> in the Department of Radiation Oncology at Shuguang Hospital, Shanghai University of Traditional Chinese Medicine. I trained in medical physics at Fudan University (M.S.), and I sit on the Physics Group of the Branch Association of Radiation Oncology of Shanghai Medical Association and on the committee of the Medical Imaging Computing Seminar (MICS). Along the way I have led four Shanghai municipal and other grants and filed seven patent applications, two of them granted.</p>
+  <p class="about" data-zh="我在上海中医药大学附属曙光医院放疗科担任<strong>物理技术组长</strong>，拥有复旦大学医学物理硕士学位。现任上海市医学会肿瘤放射治疗专科分会物理学组委员、医学图像青年研讨会委员。主持上海市卫健委等临床研究及科技创新课题 4 项，申请及授权国家发明及实用新型专利 8 项。">I serve as the <strong>Head of Physics and Technology</strong> in the Department of Radiation Oncology at Shuguang Hospital Affiliated to Shanghai University of Traditional Chinese Medicine. I hold a Master’s degree in Medical Physics from Fudan University. I am currently a member of the Physics Group of the Branch Association of Radiation Oncology of Shanghai Medical Association and on the committee of the Medical Imaging Computing Seminar (MICS). I have led four clinical research and innovation projects, including those from the Shanghai Municipal Health Commission, and have eight national invention and utility-model patents either filed or granted.</p>
   <ul class="roles">
-    <li><em>Position</em><div><b>Head, Physics Technology Group</b><span>Department of Radiation Oncology, Shuguang Hospital Affiliated to Shanghai University of Traditional Chinese Medicine</span></div></li>
+    <li><em>Position</em><div><b>Head of Physics and Technology</b><span>Department of Radiation Oncology, Shuguang Hospital Affiliated to Shanghai University of Traditional Chinese Medicine</span></div></li>
     <li><em>Education</em><div><b>M.S. in Medical Physics</b><span>Fudan University</span></div></li>
     <li><em>Societies</em><div><b>Committee Member, Physics Group</b><span>Branch Association of Radiation Oncology of Shanghai Medical Association</span></div></li>
     <li><em>Societies</em><div><b>Committee Member</b><span>Medical Imaging Computing Seminar (MICS)</span></div></li>
@@ -218,9 +218,9 @@ document.getElementById("contactbox").innerHTML = items.length ? `<div class="li
 const ZH = {
   "Hongwei Zeng": "曾宏伟", "Focus": "方向", "Papers": "论文", "About": "关于", "Contact": "联系",
   "Radiation oncology physics, Shanghai": "肿瘤放射治疗物理，上海",
-  "I'm Hongwei Zeng, a medical physicist at Shuguang Hospital, Shanghai. I work on adaptive radiotherapy, lattice radiotherapy and deep-learning tools that keep treatment plans accurate from the first fraction to the last.": "我是曾宏伟，上海中医药大学附属曙光医院的医学物理师。我研究自适应放疗、点阵放疗，以及用深度学习让治疗计划从第一次到最后一次都保持精准的工具。",
+  "I’m Hongwei Zeng, a medical physicist at Shuguang Hospital, Shanghai. My research interests include adaptive radiotherapy, Lattice radiotherapy, and deep learning-based methods and tools for improving interfraction treatment plan consistency and accuracy.": "我是上海曙光医院的医学物理师曾宏伟。主要研究方向包括自适应放疗、Lattice 放疗，以及基于深度学习提升分次间治疗计划一致性与准确性的方法与工具。",
   "See my papers": "查看论文", "Get in touch": "联系我",
-  "SCI and core-journal papers": "SCI 及核心期刊论文", "research grants led": "主持科研课题", "patent applications, 2 granted": "专利申请，2 项已授权",
+  "SCI and core-journal papers as first or corresponding author": "第一或通讯作者发表 SCI 及中华等期刊论文", "clinical research and innovation grants led, including Shanghai Municipal Health Commission": "主持上海市卫健委等临床研究及科技创新课题", "national invention and utility-model patents, applied and granted": "申请及授权国家发明及实用新型专利",
   "What I work on": "研究方向", "About me": "关于我",
   "Adaptive radiotherapy": "自适应放疗", "Using daily CBCT and deep learning to see what the anatomy did today, then re-plan around it.": "利用每日 CBCT 和深度学习，看清当天的解剖变化，并据此调整治疗计划。",
   "Lattice radiotherapy": "点阵放疗", "Making spatially fractionated boosts deliver as planned, from gamma passing rates to dose monitoring.": "让空间分割式加量放疗按计划实施，从伽马通过率到剂量监测。",
@@ -228,7 +228,7 @@ const ZH = {
   "See related papers": "查看相关论文", "All": "全部",
   "First author": "第一作者", "Last author": "末位作者", "Co-author": "合作作者", "Corresponding author": "通讯作者",
   "Contact details to be added. Fill in CONFIG at the bottom of this file to show email and academic profile links.": "联系方式待补充。在文件底部的 CONFIG 中填写后会显示在这里。",
-  "© 2026 Hongwei Zeng": "© 2026 曾宏伟", "Making radiotherapy": "让放疗", "Position": "现任", "Education": "教育", "Societies": "学术任职", "Head, Physics Technology Group": "放疗科物理技术组长", "Department of Radiation Oncology, Shuguang Hospital Affiliated to Shanghai University of Traditional Chinese Medicine": "上海中医药大学附属曙光医院放疗科", "M.S. in Medical Physics": "医学物理硕士", "Fudan University": "复旦大学", "Committee Member, Physics Group": "物理学组委员", "Branch Association of Radiation Oncology of Shanghai Medical Association": "上海市医学会肿瘤放射治疗专科分会", "Committee Member": "委员", "Medical Imaging Computing Seminar (MICS)": "医学图像青年研讨会（MICS）", "more precise and smarter.": "更精准、更智能", "Adaptive RT": "自适应放疗", "Lattice RT": "点阵放疗", "Data studies": "数据研究"
+  "© 2026 Hongwei Zeng": "© 2026 曾宏伟", "Making radiotherapy": "让放疗", "Position": "现任", "Education": "教育", "Societies": "学术任职", "Head of Physics and Technology": "放疗科物理技术组长", "Department of Radiation Oncology, Shuguang Hospital Affiliated to Shanghai University of Traditional Chinese Medicine": "上海中医药大学附属曙光医院放疗科", "M.S. in Medical Physics": "医学物理硕士", "Fudan University": "复旦大学", "Committee Member, Physics Group": "物理学组委员", "Branch Association of Radiation Oncology of Shanghai Medical Association": "上海市医学会肿瘤放射治疗专科分会", "Committee Member": "委员", "Medical Imaging Computing Seminar (MICS)": "医学图像青年研讨会", "more precise and smarter.": "更精准、更智能", "Adaptive RT": "自适应放疗", "Lattice RT": "点阵放疗", "Data studies": "数据研究"
 };
 const orig = new WeakMap();
 function applyLang(l) {
